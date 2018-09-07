@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="8SO-0V-DwT">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Table View Controller-->
+        <scene sceneID="SeJ-Nj-CPW">
+            <objects>
+                <tableViewController id="8SO-0V-DwT" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="6zn-85-8Rc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="99" id="CxD-1F-03a">
+                                <rect key="frame" x="0.0" y="28" width="375" height="99"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="CxD-1F-03a" id="Eaw-vl-JsU">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="98.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LaundryRoom" translatesAutoresizingMaskIntoConstraints="NO" id="iP2-SA-M0c">
+                                            <rect key="frame" x="32" y="12" width="75" height="75"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" secondItem="iP2-SA-M0c" secondAttribute="height" multiplier="1:1" id="8KJ-6y-pkG"/>
+                                                <constraint firstAttribute="width" constant="75" id="uVV-pH-2oe"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JUW-Pv-q1k">
+                                            <rect key="frame" x="123" y="39" width="187" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZbB-56-ZaB">
+                                            <rect key="frame" x="310" y="34" width="51" height="31"/>
+                                        </switch>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="ZbB-56-ZaB" firstAttribute="centerY" secondItem="Eaw-vl-JsU" secondAttribute="centerY" id="2Tf-bL-aIU"/>
+                                        <constraint firstItem="ZbB-56-ZaB" firstAttribute="leading" secondItem="JUW-Pv-q1k" secondAttribute="trailing" id="5wn-LP-mV1"/>
+                                        <constraint firstItem="JUW-Pv-q1k" firstAttribute="leading" secondItem="iP2-SA-M0c" secondAttribute="trailing" constant="16" id="DAQ-YE-0ly"/>
+                                        <constraint firstItem="JUW-Pv-q1k" firstAttribute="centerY" secondItem="Eaw-vl-JsU" secondAttribute="centerY" id="XY3-G2-b2b"/>
+                                        <constraint firstItem="ZbB-56-ZaB" firstAttribute="centerY" secondItem="JUW-Pv-q1k" secondAttribute="centerY" id="e64-Id-Wgj"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="ZbB-56-ZaB" secondAttribute="trailing" id="eND-Ma-h0L"/>
+                                        <constraint firstItem="iP2-SA-M0c" firstAttribute="centerY" secondItem="Eaw-vl-JsU" secondAttribute="centerY" id="ekO-8O-Tu3"/>
+                                        <constraint firstItem="iP2-SA-M0c" firstAttribute="leading" secondItem="Eaw-vl-JsU" secondAttribute="leadingMargin" constant="16" id="odN-Ef-xSm"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="8SO-0V-DwT" id="UIZ-X6-3V0"/>
+                            <outlet property="delegate" destination="8SO-0V-DwT" id="RiB-XT-Pc7"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kcJ-mg-8aZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="188" y="192.95352323838082"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="LaundryRoom" width="512" height="512"/>
+    </resources>
+</document>
