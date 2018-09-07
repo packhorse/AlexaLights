@@ -16,6 +16,7 @@
 		B8E1A9B72142045800DACB27 /* AlexaLights.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B8E1A9B52142045800DACB27 /* AlexaLights.xcdatamodeld */; };
 		B8E1A9B9214205DF00DACB27 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8E1A9B8214205DF00DACB27 /* CoreDataStack.swift */; };
 		B8E1A9BB214207D800DACB27 /* Light+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8E1A9BA214207D800DACB27 /* Light+Convenience.swift */; };
+		B8E1A9BE2142112600DACB27 /* LightController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8E1A9BD2142112600DACB27 /* LightController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		B8E1A9B62142045800DACB27 /* AlexaLights.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = AlexaLights.xcdatamodel; sourceTree = "<group>"; };
 		B8E1A9B8214205DF00DACB27 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
 		B8E1A9BA214207D800DACB27 /* Light+Convenience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Light+Convenience.swift"; sourceTree = "<group>"; };
+		B8E1A9BD2142112600DACB27 /* LightController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,14 +73,16 @@
 		B8E1A9AE2141FFC200DACB27 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				B8E1A99C2141FB3500DACB27 /* AppDelegate.swift */,
-				B8E1A9A02141FB3500DACB27 /* Main.storyboard */,
-				B8E1A9B42142042800DACB27 /* View */,
-				B8E1A9B32142040200DACB27 /* View Controllers */,
 				B8E1A9A32141FB3600DACB27 /* Assets.xcassets */,
 				B8E1A9A52141FB3600DACB27 /* LaunchScreen.storyboard */,
 				B8E1A9A82141FB3600DACB27 /* Info.plist */,
 				B8E1A9B8214205DF00DACB27 /* CoreDataStack.swift */,
+				B8E1A99C2141FB3500DACB27 /* AppDelegate.swift */,
+				B8E1A9BA214207D800DACB27 /* Light+Convenience.swift */,
+				B8E1A9A02141FB3500DACB27 /* Main.storyboard */,
+				B8E1A9BC214210F900DACB27 /* Models */,
+				B8E1A9B42142042800DACB27 /* View */,
+				B8E1A9B32142040200DACB27 /* View Controllers */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -94,10 +98,17 @@
 		B8E1A9B42142042800DACB27 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				B8E1A9BA214207D800DACB27 /* Light+Convenience.swift */,
 				B8E1A9B12142031200DACB27 /* LightTableViewCell.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		B8E1A9BC214210F900DACB27 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B8E1A9BD2142112600DACB27 /* LightController.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -175,6 +186,7 @@
 				B8E1A99D2141FB3500DACB27 /* AppDelegate.swift in Sources */,
 				B8E1A9BB214207D800DACB27 /* Light+Convenience.swift in Sources */,
 				B8E1A9B22142031200DACB27 /* LightTableViewCell.swift in Sources */,
+				B8E1A9BE2142112600DACB27 /* LightController.swift in Sources */,
 				B8E1A9B72142045800DACB27 /* AlexaLights.xcdatamodeld in Sources */,
 				B8E1A9B02142024500DACB27 /* LightsTableTableViewController.swift in Sources */,
 			);

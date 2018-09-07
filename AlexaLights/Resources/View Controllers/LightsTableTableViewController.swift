@@ -41,4 +41,9 @@ class LightsTableTableViewController: UITableViewController {
         }    
     }
 
+    @IBAction func addLightButtonTapped(_ sender: Any) {
+        
+    }
+    
+    
 }
