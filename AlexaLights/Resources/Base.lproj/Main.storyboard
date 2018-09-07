@@ -11,16 +11,16 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Table View Controller-->
+        <!--Lights Table Table View Controller-->
         <scene sceneID="SeJ-Nj-CPW">
             <objects>
-                <tableViewController id="8SO-0V-DwT" sceneMemberID="viewController">
+                <tableViewController id="8SO-0V-DwT" customClass="LightsTableTableViewController" customModule="AlexaLights" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="6zn-85-8Rc">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="99" id="CxD-1F-03a">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="99" id="CxD-1F-03a" customClass="LightTableViewCell" customModule="AlexaLights" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="99"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="CxD-1F-03a" id="Eaw-vl-JsU">
@@ -42,6 +42,9 @@
                                         </label>
                                         <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZbB-56-ZaB">
                                             <rect key="frame" x="310" y="34" width="51" height="31"/>
+                                            <connections>
+                                                <action selector="lightSwitchFlipped:" destination="CxD-1F-03a" eventType="valueChanged" id="9eE-7W-Net"/>
+                                            </connections>
                                         </switch>
                                     </subviews>
                                     <constraints>
@@ -55,6 +58,10 @@
                                         <constraint firstItem="iP2-SA-M0c" firstAttribute="leading" secondItem="Eaw-vl-JsU" secondAttribute="leadingMargin" constant="16" id="odN-Ef-xSm"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="roomImageView" destination="iP2-SA-M0c" id="hBZ-cA-jtE"/>
+                                    <outlet property="roomNameLabel" destination="JUW-Pv-q1k" id="7PT-Aa-Eha"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
